@@ -1,0 +1,49 @@
+.populer {
+    background: #F3F3F3;
+    padding: 50px 0 116px;
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            content: 'Kitchen';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 129px;
+            height: 148px;
+            position: absolute;
+            border-radius: 3px;
+            background: rgba(113, 179, 198, 0.85);
+            color: #FFF;
+            font-family: Dosis;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            top: 55%;
+            right: 50%;
+        }
+    }
+
+    &__block-text {
+        text-align: center;
+    }
+
+    &__title {
+        color: #264A51;
+        font-family: Dosis;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__sub-title {
+        margin: 15px 20px;
+        color: #335E74;
+        font-family: Mukta;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

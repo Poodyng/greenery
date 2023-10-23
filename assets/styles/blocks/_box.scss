@@ -1,0 +1,153 @@
+.box {
+    display: grid;
+    grid-template-columns: 178px 1fr;
+    
+    &__left {
+        
+    }
+
+    &__left-items-card {
+        padding-bottom: 110px;
+        background-color: rgba(0, 42, 50, 1);
+    }
+
+    &__left-logo {
+        padding: 19px 35px 70px;
+        background-color: rgba(0, 42, 50, 1);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__left-card {
+        padding: 20px 60px;
+        background-color: rgba(0, 42, 50, 1);
+        text-align: center;
+        transition: 0.4s ease;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(60, 108, 127, 1);
+        }
+    }
+
+    &__left-title {
+        margin-top: 5px;
+        color: #8999A1;
+        font-family: Open Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__right {
+        background: url("/assets/images/hero-img.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    &__right-header {
+        padding: 28px 165px 105px 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right-items-left {
+        display: flex;
+        gap: 39px;
+    }
+
+    &__right-card-text {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__right-title {
+        color: #3E5860;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        transition: 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: #598e9e;
+        }
+    }
+
+    &__right-items-right {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__right-right-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__right-title-red {
+        color: #DD6060;
+        font-family: Open Sans;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__right-sub-title {
+        display: flex;
+        gap: 1px;
+        align-items: end;
+        color: #3E5860;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        transition: 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: #598e9e;
+        }
+    }
+
+    &__hero {
+       
+    }
+
+    &__hero-block {
+        padding: 105px 0 0 100px;
+    }
+
+    &__hero-title {
+        color: #4E6E77;
+        font-family: Dancing Script;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__hero-sub-title {
+        margin: 9px 0 18px;
+        color: #264A51;
+        font-family: Dosis;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__btn {
+
+    }
+
+    &__hero-img {
+        position: relative;
+        &::before {
+            content: '';
+            width: 195px;
+            height: 140px;
+            background: url(/assets/images/icons/arow.png);
+            position: absolute;
+            right: 27%;
+            bottom: 170px;
+        }
+    }
+}

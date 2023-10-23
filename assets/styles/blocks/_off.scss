@@ -1,0 +1,35 @@
+.off {
+    padding: 421px 0 263px;
+    background: url(/assets/images/fone-off.png) center no-repeat;
+    background-size: cover;
+    &__block-text {
+        padding: 0 0 50px 160px;
+        display: flex;
+        text-align: center;
+    }
+
+    &__text-orange {
+        color: #F3B705;
+        font-family: Dosis;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    &__title {
+        color: #264A51;
+        font-family: Dosis;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__sub-title {
+        margin: 15px 0 24px;
+        color: #335E74;
+        font-family: Mukta;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

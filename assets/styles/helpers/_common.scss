@@ -1,0 +1,82 @@
+@import './reset';
+@import './mixins';
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn--max {
+    padding: 8px 17px;
+    border-radius: 3px;
+    border: 1.5px solid #43717D;
+    color: #264A51;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        color: #43717D;
+        border: 1.5px solid #264A51;
+    }
+}
+
+.btn--off {
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 2px solid #264A51;
+    background: rgba(108, 176, 195, 0.00);
+    color: #264A51;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        border: 2px solid #F3B705;
+    }
+}
+
+.btn--living {
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 2px solid #264A51;
+    color: #264A51;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        color: aliceblue;
+        background-color: #264A51;
+    }
+}
+
+.btn--get {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: rgba(38, 74, 81, 0.89);
+    box-shadow: -2px 15px 40px 0px rgba(0, 0, 0, 0.11);
+    color: #FFF;
+    font-family: Mukta;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        outline: 1px solid #264A51;
+        color: rgba(38, 74, 81, 0.89);
+        background: #FFF;
+    }
+}

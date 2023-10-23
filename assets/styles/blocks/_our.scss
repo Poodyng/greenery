@@ -1,0 +1,195 @@
+.our {
+    background: #F3F3F3;
+    &__items {
+       
+    }
+
+    &__header {
+        padding-top: 93px;
+    }
+
+    &__title {
+        color: #264A51;
+        text-align: center;
+        font-family: Dosis;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__block-list {
+        padding-top: 33px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__sub-title {
+        padding: 5px 10px;
+        color: #748289;
+        font-family: Open Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        &:hover {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 2px;
+            outline: 2px solid #3E5860;
+            background: rgba(54, 65, 68, 0.00);
+            color: #264A51;
+            font-family: Open Sans;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    &__block-card {
+        padding: 34px 0 114px;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 30px;
+    }
+
+    &__card {
+        max-width: 309px;
+        position: relative;
+        &::after {
+            content: 'Out of stoke';
+            padding: 6px;
+            border-radius: 2px 0px 0px 2px;
+            width: 66px;
+            height: 17px;
+            position: absolute;
+            background-color: rgba(38, 74, 81, 1);
+            color: #FFF;
+            font-family: Mukta;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            top: 34%;
+            right: 0;
+        }
+    }
+
+    &__mini-card {
+        display: flex;
+        padding: 30px 18px 20px 24px;
+        border-radius: 3px;
+        background: #F1F6F9;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+        transition: 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 6px 13px 18px 8px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__icon {
+        padding: 2px;
+        background-color: rgba(113, 179, 198, 1);
+        border-radius: 4px;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+
+    &__list-icon {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__icon-info {
+        margin-top: -16px;
+        margin-left: -24px;
+    }
+
+    &__text-number {
+        margin-bottom: 14px;
+        padding: 10px 5px;
+        border-radius: 20px;
+        color: #FFF;
+        font-family: Mukta;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        background-color: rgba(38, 74, 81, 1);
+    }
+
+    &__text {
+        padding: 10px 5px;
+        border-radius: 20px;
+        background-color: rgba(113, 179, 198, 1);
+        color: #D4DCE2;
+        font-family: Mukta;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__block-text {
+        padding-top: 12px;
+    }
+
+    &__word {
+        margin: 5px 0;
+        color: #264A51;
+        text-align: center;
+        font-family: Mukta;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__stars {
+        margin-right: 85px;
+    }
+}
+
+.rating-area {
+	overflow: hidden;
+    width: 230px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 29px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 25px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}

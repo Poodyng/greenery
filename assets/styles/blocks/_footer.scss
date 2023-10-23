@@ -1,0 +1,96 @@
+.footer {
+    padding: 116px 0 45px;
+    background: #F3F3F3;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__title {
+        margin: 12px 0 19px;
+        color: #335E74;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__list {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__img-icon {
+        padding: 5px;
+        border-radius: 50px;
+        background-color: #3a5b62;
+        display: flex;
+        &:hover {
+            cursor: pointer;
+            background-color: #8ccece;
+            outline: 1px solid #3a5b62;
+        }
+    }
+
+    &__block-list {
+
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        color: #264A51;
+        font-family: Mukta;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-text {
+        margin-bottom: 5px;
+        color: #335E74;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        transition: 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: #4ba7d4;
+        }
+    }
+
+    &__block-list-service {
+        padding: 20px;
+        border-radius: 7px;
+        background: #A0C7EA;
+    }
+
+    &__block-text {
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__title-blue {
+        color: #335E74;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__title-white {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

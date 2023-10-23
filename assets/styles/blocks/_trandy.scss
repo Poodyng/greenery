@@ -1,0 +1,49 @@
+.trandy {
+    background: #F3F3F3;
+    padding: 66px 50px;
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            content: 'Dining';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 129px;
+            height: 148px;
+            position: absolute;
+            border-radius: 3px;
+            background: rgba(113, 179, 198, 0.85);
+            color: #FFF;
+            font-family: Dosis;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            top: 51%;
+            right: 51%;
+        }
+    }
+
+    &__block-text {
+        text-align: center;
+    }
+
+    &__title {
+        color: #264A51;
+        font-family: Dosis;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__sub-title {
+        margin: 10px 0 20px;
+        color: #335E74;
+        font-family: Mukta;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    } 
+}
